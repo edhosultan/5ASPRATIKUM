@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="angkapertama"
+        android:padding="16dp"
+        />
+    <EditText
+        android:id="@+id/etAngkapertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="angkapertama"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="angkakedua"
+        android:padding="16dp"
+        />
+    <EditText
+        android:id="@+id/etAngkakedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="angkakedua"
+        />
+    <Button
+
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        />
+
+</LinearLayout>
