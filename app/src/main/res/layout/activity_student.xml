@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    tools:context=".StudentActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etIdStudent"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="match_parent"
+        android:hint="@string/student_id"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etNameStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="match_parent"
+        android:hint="@string/student_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPhoneNumberStudent"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="match_parent"
+        android:hint="@string/phone_number"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btSendStudent"
+        android:layout_width="230dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="match_parent"
+        android:inputType="textPersonName"
+        android:text="@string/send" />
+</LinearLayout>
