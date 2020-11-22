@@ -14,16 +14,22 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
-        val tvStudentIdResult :TextView! = findViewById<TextView>(R.id.tvStudentIdResult)
-        val tvStudentNameResult :TextView! = findViewById<TextView>(R.id.tvStudentNameResult)
-        val tvStudentPhoneNumberResult :TextView! = findViewById<TextView>(R.id.tvStudentPhoneNumberResult)
+        val tvStudentIdResult: TextView! = findViewById<TextView>(R.id.tvStudentIdResult)
+        val tvStudentNameResult: TextView! = findViewById<TextView>(R.id.tvStudentNameResult)
+        val tvStudentPhoneNumberResult: TextView! = findViewById<TextView>(R.id.tvStudentPhoneNumberResult)
 
-        val id :String =intent.getStringExtra(EXTRA_ID)
-        val name :String =intent.getStringExtra(EXTRA_NAME)
-        val phonenumber :String =intent.getStringExtra(EXTRA_PHONE_NUMBER)
+        val id: String = intent.getStringExtra(EXTRA_ID)
+        val name: String = intent.getStringExtra(EXTRA_NAME)
+        val phonenumber: String = intent.getStringExtra(EXTRA_PHONE_NUMBER)
 
-        tvStudentIdResult.text =id
-        tvStudentNameResult.text =name
-        tvStudentPhoneNumberResult.text =phonenumber
+
+        val student = intent.getParcelableExtra<Student>(EXTRA_STUDENT)
+
+        if (student != null) {
+            tvStudentIdResult.text = student.id
+            tvStudentNameResult.text = student.name
+            tvStudentPhoneNumberResult.text = student.phoneNumber
+        }
+    }
     }
 }

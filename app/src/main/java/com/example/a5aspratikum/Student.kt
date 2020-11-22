@@ -1,7 +1,5 @@
 package com.example.a5aspratikum
 
-package com.mirzayogy.praktikumkelas5
-
 import android.os.Parcel
 import android.os.Parcelable
 
