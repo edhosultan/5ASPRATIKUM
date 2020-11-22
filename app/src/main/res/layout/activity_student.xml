@@ -1,45 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="20dp"
-    android:layout_gravity="center"
-    tools:context=".StudentActivity"
-    android:orientation="vertical">
+<?xml version="1.0" encoding="UTF-8"?>
 
-    <EditText
-        android:id="@+id/etIdStudent"
-        android:layout_width="206dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="match_parent"
+<LinearLayout tools:context=".StudentActivity" android:gravity="center" android:padding="20dp" android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:hint="@string/student_id"
-        android:inputType="number" />
+        android:inputType="number"
+        android:id="@+id/etIdStudent"/>
 
-    <EditText
-        android:id="@+id/etNameStudent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_weight="match_parent"
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:hint="@string/student_name"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/etPhoneNumberStudent"
-        android:layout_width="225dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_weight="match_parent"
-        android:hint="@string/phone_number"
-        android:inputType="phone" />
-
-    <Button
-        android:id="@+id/btSendStudent"
-        android:layout_width="230dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="16dp"
-        android:layout_weight="match_parent"
         android:inputType="textPersonName"
-        android:text="@string/send" />
+        android:id="@+id/etNameStudent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:id="@+id/etPhoneNumberStudent"
+        android:layout_marginTop="16dp"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/btSendStudent"
+        android:layout_marginTop="16dp"
+        android:text="@string/send"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/btDialStudent"
+        android:layout_marginTop="16dp"
+        android:text="@string/dial"/>
+
 </LinearLayout>
